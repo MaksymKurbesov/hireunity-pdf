@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="pdf-form">
+        <div id="pdf-form-wrapper">
+          <div>
+            <label for="surname">Etternavn (Фамилия):</label>
+            <input type="text" id="surname" name="surname" />
+          </div>
+
+          <div>
+            <label for="name">Fornavn (Имя):</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div>
+            <label for="nationality">Statsborgerskap (Гражданство):</label>
+            <input type="text" id="nationality" name="nationality" />
+          </div>
+
+          <div>
+            <label for="gender">Пол:</label>
+            <select name="gender" id="gender">
+              <option value="Mann" selected>Мужчина</option>
+              <option value="Kvinne">Женщина</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="birthday">Født (Дата рождения):</label>
+            <input type="text" id="birthday" name="birthday" />
+          </div>
+
+          <div>
+            <label for="name-company"
+              >Navn (Selskap) (Название компании):</label
+            >
+            <input type="text" id="name-company" name="name-company" />
+          </div>
+
+          <div>
+            <label for="address">Gåte (Адрес):</label>
+            <input type="text" id="address" name="address" />
+          </div>
+
+          <div>
+            <label for="post">Postnummer/sted (Почтовый индекс/город):</label>
+            <input type="text" id="post" name="post" />
+          </div>
+
+          <div>
+            <label for="contact">Ta kontakt (Контактное лицо):</label>
+            <input type="text" id="contact" name="contact" />
+          </div>
+
+          <div>
+            <label for="telephone"
+              >Telefon-/Faksnr./E-post (Телефон/Факс/E-mail):</label
+            >
+            <input type="text" id="telephone" name="telephone" />
+          </div>
+
+          <div>
+            <label for="number-company">Firmanummer (Номер компании):</label>
+            <input type="text" id="number-company" name="number-company" />
+          </div>
+
+          <div>
+            <label for="activity">Aktiviteter (Виды деятельности):</label>
+            <input type="text" id="activity" name="activity" />
+          </div>
+
+          <div>
+            <label for="job">Jobb (Работа):</label>
+            <input type="text" id="job" name="job" />
+          </div>
+
+          <div>
+            <label for="duration"
+              >Varighet av ansettelse (Длительность найма):</label
+            >
+            <input type="text" id="duration" name="duration" />
+          </div>
+
+          <div>
+            <label for="work-time"
+              >Arbeidstid per uke (Рабочее время в неделю):</label
+            >
+            <input type="text" id="work-time" name="work-time" />
+          </div>
+
+          <div>
+            <label for="salary"
+              >Lønn (minstebetaling) (Зарплата (минимальная оплата)):</label
+            >
+            <input type="text" id="salary" name="salary" />
+          </div>
+
+          <div>
+            <label for="salary2">
+              Lønn per vare (min.) (Оплата за единицу (мин.)):</label
+            >
+            <input type="text" id="salary2" name="salary2" />
+          </div>
+
+          <div>
+            <label for="place">Plassering (Местоположение):</label>
+            <input type="text" id="place" name="place" />
+          </div>
+
+          <div>
+            <label for="date">Dato (Дата):</label>
+            <input type="text" id="date" name="date" />
+          </div>
+        </div>
+        <button class="submit-button" type="submit">Update PDF</button>
+        <button class="download-button">Download PDF</button>
+      </form>
+
+      <div id="pdf-canvas-container">
+        <canvas id="pdf-canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
