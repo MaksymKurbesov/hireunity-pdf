@@ -47,7 +47,7 @@ export const getTextOptions = (text: string, height: number, font: any) => {
       color: rgb(0, 0, 0),
       font: font,
     },
-    [`name-company`]: {
+    nameCompany: {
       x: 185,
       y: height - 232,
       size: 8,
@@ -82,7 +82,7 @@ export const getTextOptions = (text: string, height: number, font: any) => {
       color: rgb(0, 0, 0),
       font: font,
     },
-    [`number-company`]: {
+    numberCompany: {
       x: 130,
       y: height - 353,
       size: 8,
@@ -103,14 +103,14 @@ export const getTextOptions = (text: string, height: number, font: any) => {
       color: rgb(0, 0, 0),
       font: font,
     },
-    duration: {
+    durationWork: {
       x: 180,
       y: height - 393,
       size: 8,
       color: rgb(0, 0, 0),
       font: font,
     },
-    ["work-time"]: {
+    workTime: {
       x: 200,
       y: height - 421,
       size: 8,
