@@ -5,8 +5,9 @@ import { PDFDocument } from "pdf-lib";
 import { getTextOptions } from "./getTextOptions";
 import fontkit from "@pdf-lib/fontkit";
 
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-  "../../node_modules/pdfjs-dist/build/pdf.worker.min.mjs";
+console.log(pdfjsLib.version, "pdfjsLib");
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.mjs`;
 
 const url = "./job_offer.pdf";
 const fontUrl = "./calibrib.ttf";
